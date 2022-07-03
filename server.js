@@ -23,7 +23,7 @@ const breadsController = require("./controllers/breads_controller.js");
 app.use("/breads", breadsController);
 // 404 Page
 app.get("*", (req, res) => {
-  res.status(404).send("404");
+  res.status(404).render("Fourofour");
 });
 
 //LISTEN
